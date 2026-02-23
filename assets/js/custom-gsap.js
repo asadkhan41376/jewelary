@@ -235,11 +235,13 @@ document.addEventListener("DOMContentLoaded", function () {
         start: "top 60%",
         toggleActions: "play none none reverse",
         markers: false,
+        
       },
-      defaults: {
-        ease: "power1.out",
-        duration: 1,
-      },
+     defaults: {
+  ease: "power1.out",
+  duration: 1,
+  force3D: true
+}
     });
 
     advanced
@@ -262,10 +264,11 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleActions: "play none none reverse",
         markers: false,
       },
-      defaults: {
-        ease: "power1.out",
-        duration: .4,
-      },
+     defaults: {
+  ease: "power1.out",
+  duration: .4,
+  force3D: true
+}
     });
 
     feature

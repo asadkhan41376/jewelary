@@ -8323,6 +8323,7 @@ input:focus, input:focus-visible {
     padding: 3px;
     box-shadow: 0 9px 20px 0 rgba(50, 69, 93, 0.04);
     border-radius: 17px;
+    
 }
 
 .advance-thumb img {
@@ -10717,3 +10718,11 @@ input:focus, input:focus-visible {
 }
 
 
+
+.experience-wrapper .product_tag{
+    color: var(--black);
+}
+
+.experience-wrapper:hover .product_tag{
+    color: white;
+}
