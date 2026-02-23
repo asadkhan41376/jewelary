@@ -761,7 +761,7 @@
           }, 500);
           clearInterval(LoadingCounter);
         }
-      }, 10);
+      }, 5);
   // ========================= Preloader Js End=====================
 
   // ========================= Header Sticky Js Start ==============
