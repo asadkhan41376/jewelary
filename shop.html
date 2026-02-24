@@ -1,0 +1,1465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="untitled " />
+    <meta name="keywords" content="untitled " />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>untitled des</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Swiper Bundle -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- Magnific-Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/shop.css" />
+  </head>
+
+  <body class="bg-white">
+    <!--==================== Preloader Start ====================-->
+    <div class="loading-screen" id="loading-screen">
+      <span class="bar top-bar"></span>
+      <span class="bar down-bar"></span>
+      <div class="animation-preloader">
+        <div class="position-relative z-1">
+          <div class="loader-border"></div>
+          <div
+            class="loader-logo position-absolute top-50 start-50 translate-middle tw-z-999"
+          ></div>
+        </div>
+        <div class="txt-loading tw-mt-10">
+          <span data-text-preloader="L" class="letters-loading"> L </span>
+          <span data-text-preloader="O" class="letters-loading"> O </span>
+          <span data-text-preloader="D" class="letters-loading"> D </span>
+          <span data-text-preloader="I" class="letters-loading"> I </span>
+          <span data-text-preloader="N" class="letters-loading"> N </span>
+          <span data-text-preloader="G" class="letters-loading"> G </span>
+        </div>
+      </div>
+    </div>
+    <!--==================== Preloader End ====================-->
+
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- Custom Toast Message start -->
+    <div id="toast-container"></div>
+    <!-- Custom Toast Message End -->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="progress-wrap cursor-big">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- Custom Cursor Start -->
+    <div class="cursor"></div>
+    <span class="dot"></span>
+    <!-- Custom Cursor End -->
+
+    <!-- ==================== Mobile Menu Start Here ==================== -->
+    <div
+      class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68"
+    >
+      <button
+        type="button"
+        class="close-button position-absolute tw-end-0 top-0 tw-me-2 tw-mt-2 tw-w-605 tw-h-605 rounded-circle d-flex justify-content-center align-items-center text-neutral-900 bg-neutral-200 hover-bg-neutral-900 hover-text-white"
+      >
+        <i class="ph ph-x"></i>
+      </button>
+
+      <div class="mobile-menu__inner">
+        <a href="#" class="mobile-menu__logo">
+          <img src="assets/images/logo/logo.png" alt="Logo" />
+        </a>
+        <div class="mobile-menu__menu">
+          <!-- Nav menu Start -->
+          <ul
+            class="nav-menu d-lg-flex align-items-center nav-menu--mobile d-block tw-mt-8"
+          >
+            <li class="nav-menu__item has-submenu activePage">
+              <a
+                href="javascript:void(0)"
+                class="nav-menu__link tw-pe-5 text-white font-heading tw-py-8 fw-normal w-100"
+                >Home</a
+              >
+
+              <!-- mega menu start -->
+              <div
+                class="mega-menu tw-p-6 tw-rounded-lg scroll-sm nav-submenu position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md tw-duration-200 tw-z-99"
+              >
+                <div class="row g-4 row-cols-1 row-cols-lg-3 row-cols-xl-4">
+                  <div class="col">
+                    <div class="mega-menu-item group-item">
+                      <div
+                        class="position-relative border border-neutral-200 tw-rounded-lg overflow-hidden"
+                      >
+                        <a href="index.html" class="d-block">
+                          <img
+                            src="assets/images/thumbs/home-img1.png"
+                            alt="Home Page Image"
+                            class="tw-h-320-px w-100 object-fit-cover object-top"
+                          />
+                        </a>
+                        <div class="d-lg-flex d-none">
+                          <div
+                            class="mega-menu-item__overlay position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-scale-08 group-hover-item-scale-1 tw-rounded-lg pointer-event-none"
+                          ></div>
+                          <div
+                            class="mega-menu-item__buttons position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column tw-gap-4 tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1"
+                          >
+                            <a
+                              class="tw-btn-hover-white bg-main-600 tw-py-4 tw-px-8 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg"
+                              href="index.html"
+                              >Live Preview
+                              <span class="d-inline-block lh-1 tw-text-lg"
+                                ><i class="ph ph-arrow-up-right"></i></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tw-mt-4 text-center">
+                        <a
+                          href="index.html"
+                          class="text-heading hover-text-main-600 fw-semibold tw-text-md text-capitalize line-clamp-1"
+                          >Home One</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="mega-menu-item group-item">
+                      <div
+                        class="position-relative border border-neutral-200 tw-rounded-lg overflow-hidden"
+                      >
+                        <a href="index-2.html" class="d-block">
+                          <img
+                            src="assets/images/thumbs/home-img2.png"
+                            alt="Home Page Image"
+                            class="tw-h-320-px w-100 object-fit-cover object-top"
+                          />
+                        </a>
+                        <div class="d-lg-flex d-none">
+                          <div
+                            class="mega-menu-item__overlay position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-scale-08 group-hover-item-scale-1 tw-rounded-lg pointer-event-none"
+                          ></div>
+                          <div
+                            class="mega-menu-item__buttons position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column tw-gap-4 tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1"
+                          >
+                            <a
+                              class="tw-btn-hover-white bg-main-600 tw-py-4 tw-px-8 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg"
+                              href="index-2.html"
+                              >Live Preview
+                              <span class="d-inline-block lh-1 tw-text-lg"
+                                ><i class="ph ph-arrow-up-right"></i></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tw-mt-4 text-center">
+                        <a
+                          href="index-2.html"
+                          class="text-heading hover-text-main-600 fw-semibold tw-text-md text-capitalize line-clamp-1"
+                          >Home Two</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="mega-menu-item group-item">
+                      <div
+                        class="position-relative border border-neutral-200 tw-rounded-lg overflow-hidden"
+                      >
+                        <a href="index-3.html" class="d-block">
+                          <img
+                            src="assets/images/thumbs/home-img3.png"
+                            alt="Home Page Image"
+                            class="tw-h-320-px w-100 object-fit-cover object-top"
+                          />
+                        </a>
+                        <div class="d-lg-flex d-none">
+                          <div
+                            class="mega-menu-item__overlay position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-scale-08 group-hover-item-scale-1 tw-rounded-lg pointer-event-none"
+                          ></div>
+                          <div
+                            class="mega-menu-item__buttons position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column tw-gap-4 tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1"
+                          >
+                            <a
+                              class="tw-btn-hover-white bg-main-600 tw-py-4 tw-px-8 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg"
+                              href="index-3.html"
+                              >Live Preview
+                              <span class="d-inline-block lh-1 tw-text-lg"
+                                ><i class="ph ph-arrow-up-right"></i></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tw-mt-4 text-center">
+                        <a
+                          href="index-3.html"
+                          class="text-heading hover-text-main-600 fw-semibold tw-text-md text-capitalize line-clamp-1"
+                          >Home Three</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="mega-menu-item group-item">
+                      <div
+                        class="position-relative border border-neutral-200 tw-rounded-lg overflow-hidden"
+                      >
+                        <a href="index-4.html" class="d-block">
+                          <img
+                            src="assets/images/thumbs/home-img4.png"
+                            alt="Home Page Image"
+                            class="tw-h-320-px w-100 object-fit-cover object-top"
+                          />
+                        </a>
+                        <div class="d-lg-flex d-none">
+                          <div
+                            class="mega-menu-item__overlay position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-scale-08 group-hover-item-scale-1 tw-rounded-lg pointer-event-none"
+                          ></div>
+                          <div
+                            class="mega-menu-item__buttons position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column tw-gap-4 tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1"
+                          >
+                            <a
+                              class="tw-btn-hover-white bg-main-600 tw-py-4 tw-px-8 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg"
+                              href="index-4.html"
+                              >Live Preview
+                              <span class="d-inline-block lh-1 tw-text-lg"
+                                ><i class="ph ph-arrow-up-right"></i></span
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tw-mt-4 text-center">
+                        <a
+                          href="index-4.html"
+                          class="text-heading hover-text-main-600 fw-semibold tw-text-md text-capitalize line-clamp-1"
+                          >Home Four</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- mega menu end -->
+            </li>
+            <li class="nav-menu__item has-submenu position-relative">
+              <a
+                href="javascript:void(0)"
+                class="nav-menu__link tw-pe-5 text-white font-heading tw-py-11 fw-normal w-100"
+                >Pages</a
+              >
+              <ul
+                class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
+              >
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="about.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >About Us</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="service.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Service</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="service-details.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Service Details</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="animations.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Our Animations</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="offers.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Offers</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="gallery.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Gallery</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="pricing.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Pricing</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="testimonial.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Testimonial</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="appointment.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Book An Appointment</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu__item has-submenu position-relative">
+              <a
+                href="javascript:void(0)"
+                class="nav-menu__link tw-pe-5 text-white font-heading tw-py-11 fw-normal w-100"
+                >Room</a
+              >
+              <ul
+                class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
+              >
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="room.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Room</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="room-details.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Room Details</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu__item has-submenu position-relative">
+              <a
+                href="javascript:void(0)"
+                class="nav-menu__link tw-pe-5 text-white font-heading tw-py-11 fw-normal w-100"
+                >Destination</a
+              >
+              <ul
+                class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
+              >
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="destination.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                  >
+                    Destination</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="#"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                  >
+                    Destination Details</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu__item has-submenu position-relative">
+              <a
+                href="javascript:void(0)"
+                class="nav-menu__link tw-pe-5 text-white font-heading tw-py-11 fw-normal w-100"
+                >Blog</a
+              >
+              <ul
+                class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99"
+              >
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="blog.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Blog</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="blog-grid.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                    >Blog Grid</a
+                  >
+                </li>
+                <li
+                  class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative"
+                >
+                  <a
+                    href="blog-details.html"
+                    class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded"
+                  >
+                    Blog Details</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="contact.html"
+                class="nav-menu__link text-white font-heading tw-py-11 fw-normal w-100"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- Nav menu End  -->
+        </div>
+      </div>
+    </div>
+    <!-- ==================== Mobile Menu End Here ==================== -->
+
+    <!-- ==================== Header Top Start Here ==================== -->
+    <!-- <div class="header-top-three header-transparent d-none d-md-block">
+
+      <div class="container tw-container-1680-px">
+        <div class="header-top-three-wrapper d-flex justify-content-between">
+          <div class="d-flex tw-gap-10 align-items-center">
+            <div class="d-flex align-items-end tw-gap-1">
+              <span class="text-white d-inline-block lh-1 tw-text-lg"
+                ><i class="ph-bold ph-envelope"></i
+              ></span>
+              <a
+                class="text-white font-heading tw-text-315 fw-normal"
+                href="mailto:support@example.com"
+                >support@example.com</a
+              >
+            </div>
+            <div class="d-flex align-items-end tw-gap-1">
+              <span class="text-white d-inline-block lh-1 tw-text-lg"
+                ><i class="ph-bold ph-phone"></i
+              ></span>
+              <a class="text-white font-heading tw-text-315 fw-normal" href="#"
+                >support@example.com</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="d-flex align-items-end tw-gap-1">
+              <span class="text-white d-inline-block lh-1 tw-text-lg"
+                ><i class="ph-bold ph-map-pin"></i
+              ></span>
+              <p class="text-white mb-0 font-heading tw-text-315 fw-normal">
+                123 Main Street, Springfield, USA
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="overflow-hidden tag_line position-relative z-1">
+      <div class="marquee">
+        <div class="d-inline-flex align-items-center px-5 tw-gap-14">
+          <div>
+            <h6 class="marquee-title2 text-white fw-normal">
+              Lab-Grown Diamond
+            </h6>
+          </div>
+        </div>
+
+        <div class="d-inline-flex align-items-center px-5 tw-gap-14">
+          <div>
+            <h6 class="marquee-title2 text-white fw-normal">
+              Lab-Grown Diamond
+            </h6>
+          </div>
+        </div>
+
+        <div class="d-inline-flex align-items-center px-5 tw-gap-14">
+          <div>
+            <h6 class="marquee-title2 text-white fw-normal">
+              Lab-Grown Diamond
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="d-inline-flex align-items-center px-5 tw-gap-14">
+          <div>
+            <h6 class="marquee-title2 text-white fw-normal">
+              Lab-Grown Diamond
+            </h6>
+          </div>
+        </div>
+
+        <div class="d-inline-flex align-items-center px-5 tw-gap-14">
+          <div>
+            <h6 class="marquee-title2 text-white fw-normal">
+              Lab-Grown Diamond
+            </h6>
+          </div>
+        </div>
+
+        <div class="d-inline-flex align-items-center px-5 tw-gap-14">
+          <div>
+            <h6 class="marquee-title2 text-white fw-normal">
+              Lab-Grown Diamond
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================== Header Top End Here ==================== -->
+
+    <!-- ==================== Header Start Here ==================== -->
+    <header
+      class="header header-three tw-transition-all tw-z-99 header-transparent"
+    >
+      <div class="container .tw-container-1630-px">
+        <nav
+          class="d-flex align-items-center justify-content-between position-relative"
+        >
+          <!-- Menu Start  -->
+          <div class="header-menu d-lg-block d-none">
+            <!-- Nav menu Start -->
+            <ul class="nav-menu d-lg-flex align-items-center tw-gap-8">
+              <li class="activePage">
+                <a
+                  href="#"
+                  class="nav-menu__link tw-pe-5 text-white font-heading tw-py-8 fw-normal w-100"
+                  >Home</a
+                >
+
+                <!-- mega menu start -->
+
+                <!-- mega menu end -->
+              </li>
+              <li class="nav-menu__item has-submenu">
+                <a
+                  href=""
+                  class="nav-menu__link tw-pe-5 text-white font-heading tw-py-11 fw-normal w-100"
+                  >Shop</a
+                >
+
+                <!-- mega menu start -->
+                <div
+                  class="mega-menu tw-p-6 tw-rounded-lg scroll-sm nav-submenu position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md tw-duration-200 tw-z-99"
+                >
+                  <div class="row g-4 row-cols-1 row-cols-lg-3 row-cols-xl-5">
+                    <div class="col">
+                      <div class="mega-menu-item group-item">
+                        <div
+                          class="position-relative border border-neutral-200 tw-rounded-lg overflow-hidden"
+                        >
+                          <a href="#" class="d-block">
+                            <img
+                              src="assets/our_image/category/webp/ring.webp"
+                              alt="Home Page Image"
+                              class="tw-h-320-px w-100 object-fit-cover object-top"
+                            />
+                          </a>
+                          <div class="d-lg-flex d-none">
+                            <div
+                              class="mega-menu-item__overlay position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-scale-08 group-hover-item-scale-1 tw-rounded-lg pointer-event-none"
+                            ></div>
+                            <div
+                              class="mega-menu-item__buttons position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column tw-gap-4 tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1"
+                            >
+                              <a
+                                class="tw-btn-hover-white bg-main-600 tw-py-4 tw-px-8 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg"
+                                href="shop.html"
+                                >Ring<span
+                                  class="d-inline-block lh-1 tw-text-lg"
+                                  ><i class="ph ph-arrow-up-right"></i></span
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tw-mt-4 text-center">
+                          <a
+                            href="shop.html"
+                            class="text-heading hover-text-main-600 fw-semibold tw-text-md text-capitalize line-clamp-1"
+                            >Ring</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="mega-menu-item group-item">
+                        <div
+                          class="position-relative border border-neutral-200 tw-rounded-lg overflow-hidden"
+                        >
+                          <a href="#" class="d-block">
+                            <img
+                              src="assets/our_image/category/webp/ear-ring.webp"
+                              alt="Home Page Image"
+                              class="tw-h-320-px w-100 object-fit-cover object-top"
+                            />
+                          </a>
+                          <div class="d-lg-flex d-none">
+                            <div
+                              class="mega-menu-item__overlay position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-scale-08 group-hover-item-scale-1 tw-rounded-lg pointer-event-none"
+                            ></div>
+                            <div
+                              class="mega-menu-item__buttons position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column tw-gap-4 tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1"
+                            >
+                              <a
+                                class="tw-btn-hover-white bg-main-600 tw-py-4 tw-px-8 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg"
+                                href="shop.html"
+                                >Ear Rings<span
+                                  class="d-inline-block lh-1 tw-text-lg"
+                                  ><i class="ph ph-arrow-up-right"></i></span
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tw-mt-4 text-center">
+                          <a
+                            href="shop.html"
+                            class="text-heading hover-text-main-600 fw-semibold tw-text-md text-capitalize line-clamp-1"
+                            >Ear Rings</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="mega-menu-item group-item">
+                        <div
+                          class="position-relative border border-neutral-200 tw-rounded-lg overflow-hidden"
+                        >
+                          <a href="#" class="d-block">
+                            <img
+                              src="assets/our_image/category/webp/bracelet.webp"
+                              alt="Home Page Image"
+                              class="tw-h-320-px w-100 object-fit-cover object-top"
+                            />
+                          </a>
+                          <div class="d-lg-flex d-none">
+                            <div
+                              class="mega-menu-item__overlay position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-scale-08 group-hover-item-scale-1 tw-rounded-lg pointer-event-none"
+                            ></div>
+                            <div
+                              class="mega-menu-item__buttons position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column tw-gap-4 tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1"
+                            >
+                              <a
+                                class="tw-btn-hover-white bg-main-600 tw-py-4 tw-px-8 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg"
+                                href="shop.html"
+                                >Bracelet<span
+                                  class="d-inline-block lh-1 tw-text-lg"
+                                  ><i class="ph ph-arrow-up-right"></i></span
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tw-mt-4 text-center">
+                          <a
+                            href="shop.html"
+                            class="text-heading hover-text-main-600 fw-semibold tw-text-md text-capitalize line-clamp-1"
+                            >Bracelet</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="mega-menu-item group-item">
+                        <div
+                          class="position-relative border border-neutral-200 tw-rounded-lg overflow-hidden"
+                        >
+                          <a href="#" class="d-block">
+                            <img
+                              src="assets/our_image/category/webp/necklace.webp"
+                              alt="Home Page Image"
+                              class="tw-h-320-px w-100 object-fit-cover object-top"
+                            />
+                          </a>
+                          <div class="d-lg-flex d-none">
+                            <div
+                              class="mega-menu-item__overlay position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-scale-08 group-hover-item-scale-1 tw-rounded-lg pointer-event-none"
+                            ></div>
+                            <div
+                              class="mega-menu-item__buttons position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column tw-gap-4 tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1"
+                            >
+                              <a
+                                class="tw-btn-hover-white bg-main-600 tw-py-4 tw-px-8 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg"
+                                href="shop.html"
+                                >Necklace<span
+                                  class="d-inline-block lh-1 tw-text-lg"
+                                  ><i class="ph ph-arrow-up-right"></i></span
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tw-mt-4 text-center">
+                          <a
+                            href="shop.html"
+                            class="text-heading hover-text-main-600 fw-semibold tw-text-md text-capitalize line-clamp-1"
+                            >Necklace</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="mega-menu-item group-item">
+                        <div
+                          class="position-relative border border-neutral-200 tw-rounded-lg overflow-hidden"
+                        >
+                          <a href="#" class="d-block">
+                            <img
+                              src="assets/our_image/category/webp/anklets.webp"
+                              alt="Home Page Image"
+                              class="tw-h-320-px w-100 object-fit-cover object-top"
+                            />
+                          </a>
+                          <div class="d-lg-flex d-none">
+                            <div
+                              class="mega-menu-item__overlay position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1 tw-scale-08 group-hover-item-scale-1 tw-rounded-lg pointer-event-none"
+                            ></div>
+                            <div
+                              class="mega-menu-item__buttons position-absolute top-0 tw-start-0 w-100 h-100 d-flex justify-content-center align-items-center flex-column tw-gap-4 tw-invisible opacity-0 group-hover-item-visible group-hover-item-opacity-1"
+                            >
+                              <a
+                                class="tw-btn-hover-white bg-main-600 tw-py-4 tw-px-8 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-lg"
+                                href="shop.html"
+                                >Anklets<span
+                                  class="d-inline-block lh-1 tw-text-lg"
+                                  ><i class="ph ph-arrow-up-right"></i></span
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tw-mt-4 text-center">
+                          <a
+                            href="shop.html"
+                            class="text-heading hover-text-main-600 fw-semibold tw-text-md text-capitalize line-clamp-1"
+                            >Anklets</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- mega menu end -->
+              </li>
+              <!-- <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-white font-heading tw-py-8 fw-normal w-100">Room</a>
+        <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="room.html" class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded">Room</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="room-details.html" class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded">Room Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-white font-heading tw-py-8 fw-normal w-100">Destination</a>
+        <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="destination.html" class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+                    Destination</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="#" class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+                    Destination Details</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-menu__item has-submenu position-relative">
+        <a href="javascript:void(0)" class="nav-menu__link tw-pe-5 text-white font-heading tw-py-8 fw-normal w-100">Blog</a>
+        <ul class="nav-submenu scroll-sm position-absolute start-0 top-100 tw-w-max bg-white tw-rounded-md overflow-hidden tw-p-2 tw-duration-200 tw-z-99">
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog.html" class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded">Blog</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog-grid.html" class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded">Blog Grid</a>
+            </li>
+            <li class="nav-submenu__item d-block tw-rounded tw-duration-200 position-relative">
+                <a href="blog-details.html" class="nav-submenu__link hover-bg-neutral-200 text-heading font-heading fw-normal w-100 d-block tw-py-2 tw-px-305 tw-rounded">
+                    Blog Details</a>
+            </li>
+        </ul>
+    </li> -->
+              <li class="nav-menu__item">
+                <a
+                  href="#"
+                  class="nav-menu__link text-white font-heading tw-py-8 fw-normal w-100"
+                  >About</a
+                >
+              </li>
+
+              <li class="nav-menu__item">
+                <a
+                  href="#"
+                  class="nav-menu__link text-white font-heading tw-py-8 fw-normal w-100"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <!-- Nav menu End  -->
+          </div>
+          <!-- Menu End  -->
+
+          <!-- Logo Start -->
+          <div class="logo">
+            <a href="#" class="link">
+              <img
+                src="assets/our_image/DalilaLogo.png"
+                alt="Logo"
+                class="max-w-200-px"
+              />
+            </a>
+          </div>
+          <!-- Logo End  -->
+
+          <!-- Header Right start -->
+          <div class="header-right d-flex">
+            <!-- <div class="header-button header-two-button">
+              <a
+                class="tw-btn-hover-white bg-main-three-600 tw-py-5 tw-px-7 text-uppercase font-heading d-inline-flex align-items-center tw-gap-2"
+                href=""
+                >EXPLORE MORE
+              </a>
+            </div> -->
+
+            <button
+              type="button"
+              title="login"
+              class="leading-none auth_btn text-white tw-text-9"
+            >
+              <i class="ph ph-user"></i>
+            </button>
+
+            <button
+              type="button"
+              title="cart"
+              class="leading-none auth_btn text-white tw-text-9"
+            >
+              <i class="ph ph-shopping-cart"></i>
+            </button>
+
+            <button
+              type="button"
+              title="menu"
+              class="toggle-mobileMenu leading-none d-lg-none text-white tw-text-9"
+            >
+              <i class="ph ph-list"></i>
+            </button>
+          </div>
+          <!-- Header Right End  -->
+        </nav>
+      </div>
+    </header>
+
+    <div id="scrollSmoother-container">
+      <!-- ==================== Luxury Breadcrumb Start ==================== -->
+      <section
+        class="lux-breadcrumb position-relative overflow-hidden d-flex justify-content-center align-items-center"
+      >
+        <div class="container position-relative z-2 align-items-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 class="breadcrumb-title text-white">Shop Collection</h2>
+            </div>
+
+            <div class="col-lg-12">
+              <ul class="breadcrumb-list">
+                <li><a href="#">Home</a></li>
+                <li><span>/</span></li>
+                <li>Shop</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== Luxury Breadcrumb End ==================== -->
+
+      <!-- ==================== Premium Shop Layout Start ==================== -->
+      <section class="lux-shop py-60">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- ===== Sidebar ===== -->
+            <div class="col-xl-3 col-lg-4">
+              <div class="lux-sidebar tw_fade_anim">
+                <div class="sidebar-box">
+                  <h5
+                    class="cta-title tw-char-animation tw-text-29 fw-normal text-white tw-mb-6 tw_fade_anim"
+                  >
+                    <!-- Get <span class="text-main-600">20% </span>Off Your First
+                  Stay! -->
+
+                    Categories
+                  </h5>
+
+                  <ul>
+                    <li><a href="#">All Jewellery</a></li>
+                    <li><a href="#">Rings</a></li>
+                    <li><a href="#">Necklaces</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                    <li><a href="#">Earrings</a></li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-box">
+                  <h5>Filter by Price</h5>
+                  <input
+                    type="range"
+                    min="100"
+                    max="5000"
+                    class="price-range"
+                  />
+                  <div class="price-values">
+                    <span>$100</span>
+                    <span>$5000</span>
+                  </div>
+                </div>
+
+                <div class="sidebar-box">
+                  <h5>Availability</h5>
+                  <label><input type="checkbox" /> In Stock</label>
+                  <label><input type="checkbox" /> Limited Edition</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== Product Grid ===== -->
+            <div class="col-xl-9 col-lg-8">
+              <!-- ===== Top Filter Bar ===== -->
+              <div class="lux-topbar">
+                <div class="lux-topbar-left">
+                  <p>Showing 1–12 of 48 results</p>
+                </div>
+
+                <div class="lux-topbar-right">
+                  <!-- Search -->
+                  <div class="lux-search">
+                    <input type="text" placeholder="Search jewellery..." />
+                    <button><i class="ph ph-magnifying-glass"></i></button>
+                  </div>
+
+                  <!-- Sort -->
+                  <div class="lux-sort">
+                    <select title="select">
+                      <option>Default Sorting</option>
+                      <option>Price: Low to High</option>
+                      <option>Price: High to Low</option>
+                      <option>Newest First</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-4">
+                <!-- Product Card -->
+                <div class="col-xl-3 col-md-6">
+                  <div class="lux-card tw_fade_anim">
+                    <div class="lux-card-image">
+                      <span class="lux-tag">Limited Edition</span>
+<a href="shop-detail.html" class="link_detail">
+  
+                      <img
+                        src="assets/our_image/product/webp/ring-1.webp"
+                        alt="Diamond Ring"
+                      />
+</a>
+
+                      <!-- Center Hover Actions -->
+                      <div class="lux-card-actions">
+                        <a href="#"><i class="ph ph-heart"></i></a>
+                        <a href="#"><i class="ph ph-eye"></i></a>
+                        <a href="#"><i class="ph ph-shopping-cart"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="lux-card-content">
+                      <h6>Ring</h6>
+                      <div class="lux-card-price">$1,200 USD</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                  <div class="lux-card tw_fade_anim">
+                    <div class="lux-card-image">
+                      <a href="shop-detail.html" class="link_detail">
+                         <img
+                        src="assets/our_image/product/webp/ring-2.webp"
+                        alt="Diamond Ring"
+                      />
+                      </a>
+                     
+
+                      <!-- Center Hover Actions -->
+                      <div class="lux-card-actions">
+                        <a href="#"><i class="ph ph-heart"></i></a>
+                        <a href="#"><i class="ph ph-eye"></i></a>
+                        <a href="#"><i class="ph ph-shopping-cart"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="lux-card-content">
+                      <h6>Ring</h6>
+                      <div class="lux-card-price">$1,200 USD</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                  <div class="lux-card tw_fade_anim">
+                    <div class="lux-card-image">
+                      <span class="lux-tag">Limited Edition</span>
+ <a href="shop-detail.html" class="link_detail">
+   <img
+                        src="assets/our_image/product/webp/bracelet.webp"
+                        alt="Diamond Ring"
+                      />
+ </a>
+                     
+
+                      <!-- Center Hover Actions -->
+                      <div class="lux-card-actions">
+                        <a href="#"><i class="ph ph-heart"></i></a>
+                        <a href="#"><i class="ph ph-eye"></i></a>
+                        <a href="#"><i class="ph ph-shopping-cart"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="lux-card-content">
+                      <h6>Bracelet</h6>
+                      <div class="lux-card-price">$1,200 USD</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                  <div class="lux-card tw_fade_anim">
+                    <div class="lux-card-image">
+
+                      <a href="shop-detail.html" class="link_detail">
+                         <img
+                        src="assets/our_image/product/webp/bracelet-2.webp"
+                        alt="Diamond Ring"
+                      />
+                      </a>
+                     
+
+                      <!-- Center Hover Actions -->
+                      <div class="lux-card-actions">
+                        <a href="#"><i class="ph ph-heart"></i></a>
+                        <a href="#"><i class="ph ph-eye"></i></a>
+                        <a href="#"><i class="ph ph-shopping-cart"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="lux-card-content">
+                      <h6>Bracelet</h6>
+                      <div class="lux-card-price">$1,200 USD</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                  <div class="lux-card tw_fade_anim">
+                    <div class="lux-card-image">
+                      <span class="lux-tag">Limited Edition</span>
+  <a href="shop-detail.html" class="link_detail">
+      <img
+                        src="assets/our_image/product/webp/bracelet-3.webp"
+                        alt="Diamond Ring"
+                      />
+  </a>
+                    
+
+                      <!-- Center Hover Actions -->
+                      <div class="lux-card-actions">
+                        <a href="#"><i class="ph ph-heart"></i></a>
+                        <a href="#"><i class="ph ph-eye"></i></a>
+                        <a href="#"><i class="ph ph-shopping-cart"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="lux-card-content">
+                      <h6>Bracelet</h6>
+                      <div class="lux-card-price">$1,200 USD</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                  <div class="lux-card tw_fade_anim">
+                    <div class="lux-card-image">
+                      <span class="lux-tag">Limited Edition</span>
+ <a href="shop-detail.html" class="link_detail">
+   <img
+                        src="assets/our_image/product/webp/bracelet-4.webp"
+                        alt="Diamond Ring"
+                      />
+ </a>
+                     
+
+                      <!-- Center Hover Actions -->
+                      <div class="lux-card-actions">
+                        <a href="#"><i class="ph ph-heart"></i></a>
+                        <a href="#"><i class="ph ph-eye"></i></a>
+                        <a href="#"><i class="ph ph-shopping-cart"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="lux-card-content">
+                      <h6>Bracelet</h6>
+                      <div class="lux-card-price">$1,200 USD</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                  <div class="lux-card tw_fade_anim" >
+                    <div class="lux-card-image">
+                      <span class="lux-sold">Sold Out</span>
+<a href="shop-detail.html" class="link_detail">
+
+  <img
+  src="assets/our_image/product/webp/necklace-3.webp"
+  alt="Diamond Ring"
+  />
+</a>
+
+                      <!-- Center Hover Actions -->
+                      <div class="lux-card-actions">
+                        <a href="#"><i class="ph ph-heart"></i></a>
+                        <a href="#"><i class="ph ph-eye"></i></a>
+                        <a href="#"><i class="ph ph-shopping-cart"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="lux-card-content">
+                      <h6>Nacklace</h6>
+                      <div class="lux-card-price">$1,200 USD</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                  <div class="lux-card tw_fade_anim">
+                    <div class="lux-card-image">
+                      <img
+                        src="assets/our_image/product/webp/necklace.webp"
+                        alt="Diamond Ring"
+                      />
+
+                      <!-- Center Hover Actions -->
+                      <div class="lux-card-actions">
+                        <a href="#"><i class="ph ph-heart"></i></a>
+                        <a href="#"><i class="ph ph-eye"></i></a>
+                        <a href="#"><i class="ph ph-shopping-cart"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="lux-card-content">
+                      <h6>Nacklace</h6>
+                      <div class="lux-card-price">$1,200 USD</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Duplicate above card 8-9 times -->
+              </div>
+
+              <!-- Pagination -->
+              <div class="lux-pagination text-center mt-5">
+                <a href="#"><i class="ph ph-arrow-left"></i></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="ph ph-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== Premium Shop Layout End ==================== -->
+      <footer
+        class="footer footer-three-area position-relative z-1 overflow-hidden"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="mb-0 text-center tw-py-10 tw_fade_anim">
+                <a href="#" class="footer_logo">
+                  <img src="assets/our_image/DalilaLogo.png" alt="Logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-center-space footer-three-center-space position-relative z-1"
+        >
+          <div class="container container-two">
+            <div class="footer-center-border tw-pt-4">
+              <div class="row gy-5">
+                <div
+                  class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12 aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  <div class="footer-three-col-1 tw_fade_anim" data-delay=".3">
+                    <ul class="d-flex flex-column tw-gap-4">
+                      <li>
+                        <a
+                          href="#"
+                          class="text-white tw-text-2xl hover-underline font-heading fw-normal hover-text-main-three-600"
+                          >Home</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-white tw-text-2xl hover-underline font-heading fw-normal hover-text-main-three-600"
+                          >About</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-white tw-text-2xl hover-underline font-heading fw-normal hover-text-main-three-600"
+                          >Shop</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-white tw-text-2xl hover-underline font-heading fw-normal hover-text-main-three-600"
+                          >Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12 aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-duration="400"
+                >
+                  <div class="footer-three-col-2 tw_fade_anim" data-delay=".5">
+                    <div class="footer-three-address text-center">
+                      <a
+                        class="footer-three-telk font-heading fw-normal tw-text-12 text-white hover-text-main-three-600"
+                        href="tel:+01622 330-77-00"
+                        >+01622 330-77-00</a
+                      >
+                      <a
+                        class="font-heading fw-normal tw-text-8 text-white d-block hover-text-main-three-600"
+                        href="mailto:info@example.com"
+                        >info@example.com</a
+                      >
+                    </div>
+                    <div
+                      class="d-flex justify-content-between flex-wrap row-gap-3"
+                    >
+                      <div>
+                        <span
+                          class="text-white d-inline-flex justify-content-start"
+                          >Ta-134/A, XyZ <br />
+                          (+880)155 69569 365</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="text-white d-inline-flex justify-content-end"
+                          >Office Hours: 8AM - 11PM <br />
+                          Sunday - Wekend Day</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                >
+                  <div class="footer-three-col-3 tw_fade_anim" data-delay=".7">
+                    <ul
+                      class="d-inline-flex flex-column tw-gap-4 justify-content-end"
+                    >
+                      <li>
+                        <a
+                          href="#"
+                          class="text-white tw-text-2xl hover-underline font-heading fw-normal hover-text-main-three-600"
+                          >Facebook</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-white tw-text-2xl hover-underline font-heading fw-normal hover-text-main-three-600"
+                          >Instagram</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="text-white tw-text-2xl hover-underline font-heading fw-normal hover-text-main-three-600"
+                          >Pinterest</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <!-- bottom Footer -->
+          <div class="footer-bottom tw-py-10">
+            <div class="container container-two">
+              <div
+                class="footer-bottom-wrap d-flex align-items-center justify-content-between tw-gap-4 flex-wrap"
+              >
+                <p
+                  class="text--white text-line-1 fw-medium tw_fade_anim"
+                  data-delay=".3"
+                >
+                  Copyright © 2025 by
+                  <a class="text-main-three-600 hover-text-white" href="#"
+                    >abc</a
+                  >. All Rights Reserved
+                </p>
+                <ul
+                  class="footer-bottom-social d-flex align-items-center tw-gap-6 aos-init tw_fade_anim"
+                  data-delay=".5"
+                >
+                  <li>
+                    <a
+                      href="https://www.facebook.com"
+                      class="tw-w-8 tw-h-8 lh-1 d-inline-flex align-items-center tw-text-xs justify-content-center rounded-circle text-white border border-neutral-900 hover-bg-main-three-600 hover-text-white hover-border-main-three-600"
+                      ><i class="ph-bold ph-facebook-logo"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.twitter.com"
+                      class="tw-w-8 tw-h-8 lh-1 d-inline-flex align-items-center tw-text-xs justify-content-center rounded-circle text-white border border-neutral-900 hover-bg-main-three-600 hover-text-white hover-border-main-three-600"
+                      ><i class="ph-bold ph-twitter-logo"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com"
+                      class="tw-w-8 tw-h-8 lh-1 d-inline-flex align-items-center tw-text-xs justify-content-center rounded-circle text-white border border-neutral-900 hover-bg-main-three-600 hover-text-white hover-border-main-three-600"
+                      ><i class="ph-bold ph-instagram-logo"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pinterest.com"
+                      class="tw-w-8 tw-h-8 lh-1 d-inline-flex align-items-center tw-text-xs justify-content-center rounded-circle text-white border border-neutral-900 hover-bg-main-three-600 hover-text-white hover-border-main-three-600"
+                      ><i class="ph-bold ph-dribbble-logo"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Jquery js -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- phosphor Js -->
+    <script src="assets/js/phosphor-icon.js"></script>
+    <!-- Bootstrap Bundle Js -->
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <!-- appear Js -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- Swiper Bundle Js -->
+    <script src="assets/js/swiper-bundle.js"></script>
+    <!-- slick Js -->
+    <!-- <script src="assets/js/slick.js"></script> -->
+    <!-- Magnific-Popup Js -->
+    <!-- <script src="assets/js/magnific-popup.min.js"></script> -->
+    <!-- Nice-Select Js -->
+    <!-- <script src="assets/js/nice-select.js"></script> -->
+    <!-- purecounter Js -->
+    <script src="assets/js/purecounter.js"></script>
+    <!-- Range Slider -->
+    <!-- <script src="assets/js/range-slider.js"></script> -->
+    <!-- knob -->
+    <!-- <script src="assets/js/jquery-knob.js"></script> -->
+    <!-- Gsap js -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- SplitText -->
+    <script src="assets/js/SplitText.min.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!-- Custom GSAP -->
+    <script src="assets/js/custom-gsap.js"></script>
+    <!-- Marquee -->
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <!-- <script src="assets/js/shop"></script> -->
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+
+const thumbs = document.querySelectorAll(".lux-thumbs img");
+const mainImage = document.getElementById("mainImage");
+
+thumbs.forEach(img => {
+  img.addEventListener("click", () => {
+    mainImage.src = img.src;
+    thumbs.forEach(i => i.classList.remove("active"));
+    img.classList.add("active");
+  });
+});
+
+
+
+
+
+
+

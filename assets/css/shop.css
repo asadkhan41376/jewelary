@@ -1,0 +1,953 @@
+#root{
+    --black: #00674F;
+}
+
+/* ===== Luxury Breadcrumb ===== */
+
+
+.lux-breadcrumb {
+  padding: 120px 0;
+  position: relative;
+  color: #fff;
+  min-height: 80vh;
+  background-image: url("/assets/our_image/about/cta.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.lux-breadcrumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+  z-index: 1;
+}
+
+.breadcrumb-title {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+
+.breadcrumb-list {
+  list-style: none;
+ 
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  padding: 0;
+}
+
+.breadcrumb-list li {
+  color: var(--black);
+  font-size: 18px;
+}
+
+.breadcrumb-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===== Premium Sidebar ===== */
+
+.lux-sidebar {
+  background: #fff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 120px;
+}
+
+/* Sidebar Box */
+
+.sidebar-box {
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.sidebar-box h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Accent Left Line */
+.sidebar-box h5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  height: 18px;
+  width: 4px;
+  background: var(--black);
+  border-radius: 4px;
+}
+
+/* Category List */
+
+.sidebar-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-box ul li {
+  margin-bottom: 14px;
+}
+
+.sidebar-box ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-box ul li a:hover {
+  color: var(--black);
+  transform: translateX(5px);
+}
+
+/* ===== Range Slider Styling ===== */
+
+.price-range {
+  width: 100%;
+  appearance: none;
+  height: 4px;
+  background: #eee;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.price-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: var(--black);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,103,79,0.4);
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== Custom Checkbox ===== */
+
+.sidebar-box label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.sidebar-box input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar-box input[type="checkbox"]:checked {
+  background: var(--black);
+  border-color: var(--black);
+}
+
+.sidebar-box input[type="checkbox"]:checked::after {
+  content: "✔";
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  left: 2px;
+  top: -2px;
+}
+/* ===== Luxury Card ===== */
+
+.lux-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* .lux-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+} */
+
+/* ===== Image Area ===== */
+
+.lux-card-image {
+  position: relative;
+  overflow: hidden;
+ aspect-ratio: 1 / 1;
+  background: linear-gradient(145deg, #fafafa, #f2f2f2);
+}
+
+.lux-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.lux-card:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== Soft Bottom Fade ===== */
+
+.lux-card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.lux-card:hover .lux-card-image::after {
+  opacity: 1;
+}
+
+/* ===== Floating Center Actions ===== */
+
+.lux-card-actions {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.lux-card-actions a {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.lux-card-actions a:hover {
+  background:var(--black) ;
+  color: white;
+  transform: translateY(-4px);
+}
+
+.lux-card:hover .lux-card-actions {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ===== Tag ===== */
+
+.lux-tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: var(--black);
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 30px;
+}
+
+.lux-sold {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: crimson;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 30px;
+}
+
+/* ===== Content ===== */
+
+.lux-card-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.lux-card-content h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.lux-card-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+  letter-spacing: 1px;
+}
+
+/* ===== Pagination ===== */
+.lux-pagination a {
+  margin: 0 5px;
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.lux-pagination a.active,
+.lux-pagination a:hover {
+  background: var(--black);
+  color: #fff;
+}
+
+
+/* =============== */
+/* ===== Top Filter Bar ===== */
+
+.lux-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 20px 25px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.lux-topbar-left p {
+  margin: 0;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Right Side */
+
+.lux-topbar-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* ===== Search ===== */
+
+.lux-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.lux-search input {
+  border: 1px solid #eee;
+  padding: 10px 45px 10px 15px;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.lux-search input:focus {
+  border-color: #00674F;
+}
+
+.lux-search button {
+  position: absolute;
+  right: 5px;
+  border: none;
+  background: #00674F;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lux-search button:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Sort Dropdown ===== */
+
+.lux-sort select {
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lux-sort select:focus {
+  border-color: #00674F;
+}
+
+
+/* ============================= */
+/* ===== Responsive Fixes ===== */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+  /* Sidebar full width */
+  .lux-sidebar {
+    position: relative;
+    top: 0;
+    margin-bottom: 30px;
+  }
+
+  /* Topbar stack */
+  .lux-topbar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .lux-topbar-right {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .lux-search,
+  .lux-sort {
+    width: 100%;
+  }
+
+  .lux-search input,
+  .lux-sort select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Breadcrumb height reduce */
+  .lux-breadcrumb {
+    min-height: 40vh;
+    padding: 80px 0;
+  }
+
+  .breadcrumb-title {
+    font-size: 28px;
+  }
+
+  /* Card image auto height */
+  .lux-card-image {
+    height: 250px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  /* Cards full width */
+  .lux-card-content {
+    padding: 18px;
+  }
+
+  .lux-card-price {
+    font-size: 14px;
+  }
+
+  .lux-card-actions a {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+}
+
+
+
+/* =====================shop detail page css ========================== */
+/* ============================= */
+/* ===== Product Details ===== */
+/* ============================= */
+
+.lux-product-details {
+  background: #f9f9f9;
+}
+
+
+.link_detail{
+  height: 100%;
+  width: 100%;
+}
+/* Gallery */
+
+.lux-main-image {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.08);
+}
+
+.lux-main-image img {
+  width: 100%;
+  display: block;
+}
+
+.lux-thumb-row {
+  display: flex;
+  gap: 15px;
+}
+
+.lux-thumb-row img {
+  width: 100px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+.lux-thumb-row img:hover {
+  border-color: #00674F;
+}
+
+/* Content */
+
+.lux-detail-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.lux-detail-price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #00674F;
+  margin-bottom: 20px;
+}
+
+.lux-detail-desc {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.lux-stock {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.in-stock {
+  color: #00674F;
+}
+
+/* Quantity */
+
+.lux-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.lux-quantity button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: #eee;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lux-quantity input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: 35px;
+}
+
+/* Add to cart */
+
+.lux-add-cart {
+  background: #00674F;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s;
+  margin-bottom: 25px;
+}
+
+.lux-add-cart:hover {
+  background: #004d3a;
+  transform: translateY(-3px);
+}
+
+/* Meta */
+
+.lux-meta p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+/* =============================== */
+/* ===== Premium Detail Layout === */
+/* =============================== */
+
+.lux-detail-wrapper {
+   background: linear-gradient(
+    135deg,
+    #f5f7f6 0%,
+    var(--black) 40%,
+    #d6e4df 100%
+  );
+  padding: 30px;
+  padding-top: 150px ;
+}
+
+.lux-detail-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 60px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.08);
+}
+
+/* ===== Gallery ===== */
+
+.lux-gallery {
+  display: flex;
+  gap: 25px;
+}
+
+.lux-thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lux-thumbs img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.lux-thumbs img.active,
+.lux-thumbs img:hover {
+  border-color: #00674F;
+}
+
+.lux-image-box {
+  flex: 1;
+  /* background: #f5f5f5; */
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.lux-image-box img {
+  max-height: 420px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+    border-radius: 20px;
+  
+}
+
+/* ===== Content ===== */
+
+.lux-category {
+  font-size: 13px;
+  color: #888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.lux-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 10px 0 15px;
+}
+
+.lux-price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #00674F;
+  margin-bottom: 15px;
+}
+
+.lux-price span {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.lux-desc {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* ===== Size Pills ===== */
+
+.lux-size {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.lux-size button {
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lux-size button.active,
+.lux-size button:hover {
+  background: #00674F;
+  color: #fff;
+  border-color: #00674F;
+}
+
+/* ===== Cart Row ===== */
+
+.lux-cart-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.lux-qty {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 12px;
+}
+
+.lux-qty button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.lux-add-btn {
+  flex: 1;
+  border: 1px solid #00674F;
+  color: #00674F;
+
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.lux-add-btn:hover {
+  background: #004d3a;
+  color: white;
+}
+
+
+
+.lux-buy-btn {
+  flex: 1;
+  background: #00674F;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.lux-buy-btn:hover {
+  background: #004d3a;
+}
+
+/* ===== Features ===== */
+
+.lux-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* ===== Bottom Detail ===== */
+
+.lux-detail-bottom {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.lux-detail-bottom h5 {
+  margin-bottom: 10px;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 992px) {
+
+  .lux-detail-card {
+    padding: 30px;
+  }
+
+  .lux-gallery {
+    flex-direction: column-reverse;
+  }
+
+  .lux-thumbs {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .lux-image-box {
+    padding: 20px;
+  }
+}
+
+
+
+
+/* ============================= */
+/* ===== Tabs Section ========= */
+/* ============================= */
+
+.lux-tabs-section {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.lux-tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+}
+
+.lux-tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+}
+
+.lux-tab-btn.active {
+  color: #00674F;
+}
+
+.lux-tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #00674F;
+}
+
+.lux-tab-content {
+  display: none;
+}
+
+.lux-tab-content.active {
+  display: block;
+}
+
+.lux-review-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.lux-review-form input,
+.lux-review-form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.lux-review-form button {
+  background: #00674F;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+/* ============================= */
+/* ===== Related Products ===== */
+/* ============================= */
+
+.lux-related {
+  padding: 60px 0;
+   background: linear-gradient(
+    135deg,
+    #f5f7f6 0%,
+    var(--black) 100%,
+    #d6e4df 40%
+  );
+}
+
+.lux-section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.lux-section-title h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
