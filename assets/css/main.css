@@ -107,7 +107,7 @@
     --main-three: var(--main-three-h) var(--main-three-s) var(--main-three-l);
   /* White Color */
     --white: 0 0% 100%;
-    --black: #00674F;
+    --black: #0B3D2E;
     --body: 60 1% 36%;
     --heading-color: var(--black);
     --body-color: var(--body);
